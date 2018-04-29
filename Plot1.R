@@ -14,7 +14,7 @@ epc2<- epc %>%
     select(datetime, Global_active_power:Sub_metering_3) %>%
     filter(datetime >= "2007-02-01" & datetime < "2007-02-03")
 
-png("Plot1.png", width = 480, height = 480, bg = "white")
+png("Plot1.png", width = 480, height = 480)
 
 hist(epc2$Global_active_power, xlab = "Global Active Power (kilowatts)", col = "red", main = "Global Active Power")
 

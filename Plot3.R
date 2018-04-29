@@ -12,7 +12,7 @@ epc2<- epc %>%
     select(datetime, Global_active_power:Sub_metering_3) %>%
     filter(datetime >= "2007-02-01" & datetime < "2007-02-03")
 
-png("Plot3.png", width = 480, height = 480, bg = "white")
+png("Plot3.png", width = 480, height = 480)
 
 plot(epc2$datetime, epc2$Sub_metering_1, type = "n", ylab = "Energy sub metering", xlab = NA)
 
